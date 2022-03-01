@@ -1,6 +1,6 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+module.exports = {
   reactStrictMode: true,
-}
-
-module.exports = nextConfig
+  env: {
+    OPEN_AI_KEY: "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",
+  },
+};
