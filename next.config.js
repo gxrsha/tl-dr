@@ -1,6 +1,7 @@
 module.exports = {
   reactStrictMode: true,
   env: {
-    OPEN_AI_KEY: "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",
+    OPENAI_API_KEY: "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",
+    OPENAI_ORG: "org-W7xk4kbIBvOkaVFBPwKaQDgA"
   },
 };
