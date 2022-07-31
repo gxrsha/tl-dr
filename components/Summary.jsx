@@ -8,7 +8,7 @@ const Summary = ({ title, url, networkImage, summaryText }) => {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className="mt-8 flex flex-col justify-center items-center">
       <div className="flex items-center px-8 mb-8">
         <img src={`${networkImage}`} className="w-20 h-20 object-cover" />
         <h1 className="ml-4 font-bold text-xl md:text-2xl">{title}</h1>
