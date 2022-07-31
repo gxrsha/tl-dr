@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "proxy": "https://tl-abr1sf7kd-sammysirak.vercel.app",
   "dependencies": {
     "autoprefixer": "^10.4.2",
     "axios": "^0.26.0",
