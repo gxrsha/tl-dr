@@ -23,7 +23,7 @@ const TopStories = ({ brand, url, networkImage }) => {
       <div className="flex flex-col items-center">
         <h1 className="font-bold text-3xl my-2">Top Stories from {brand}</h1>
         {isLoading && (
-          <Skeleton style={{ margin: "2rem 0", width: "640px" }} count={10} />
+          <Skeleton style={{ margin: "2rem 0", width: "300px" }} count={10} />
         )}
         {topStories?.map((article, index) => (
           <Link
