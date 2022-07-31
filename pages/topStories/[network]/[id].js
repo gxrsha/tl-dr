@@ -34,7 +34,7 @@ const ArticleSummaryPage = ({ title, url, networkImage }) => {
   const generateSummary = async (articleText) => {
     const configuration = new Configuration({
       // organization: process.env.OPENAI_ORG,
-      apiKey: process.env.OPENAI_API_KEY,
+      apiKey: process.env.NEXT_PUBLIC_OPEN_API_KEY,
     });
     const openai = new OpenAIApi(configuration);
 
