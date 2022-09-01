@@ -41,31 +41,6 @@ const getWebsiteData = async (url) => {
   return response.data;
 };
 
-// export const getTopStories = async (url) => {
-//   const topStories = [];
-
-//   const html = await getWebsiteData(url);
-
-
-//   const soup = new JSSoup(html);
-
-//   const articles = soup.findAll("h2", "c-entry-box--compact__title");
-//   const firstTenArticles = articles.slice(0, 10);
-
-
-//   firstTenArticles.forEach((article) => {
-
-//     const href = article.find('a')
-
-//     topStories.push({
-//       title: article.text,
-//       articleUrl: href.attrs.href,
-//     });
-//   });
-
-//   return topStories;
-// };
-
 export const extractTextFromArticle = async (url) => {
   const articleText = []
 
