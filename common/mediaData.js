@@ -11,7 +11,7 @@ export const voxDataObj = {
 export const theVergeDataObj = {
   title: "The Verge",
   imageUrl:
-    "https://yt3.ggpht.com/ytc/AKedOLRpFE1CqrF0kiUvimY9XzgPQMVzy-il9l9janS0Kes=s900-c-k-c0x00ffffff-no-rj",
+    "https://i.ytimg.com/vi/YoV4HbMFAZI/maxresdefault.jpg",
   url: "https://www.theverge.com",
   color: "purple",
 };
