@@ -1,8 +1,6 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import { useEffect, useState } from "react";
-import { Configuration, OpenAIApi } from "openai";
-import { MediaSite, Navbar, TopStories } from "../components";
+import { MediaSite } from "../components";
 import {
   voxDataObj,
   theVergeDataObj,
@@ -11,7 +9,6 @@ import {
 } from "../common/mediaData";
 
 export default function Home() {
-  console.log("env variable: ", process.env.NEXT_PUBLIC_TEST);
 
   return (
     <div className={styles.container}>

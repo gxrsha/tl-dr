@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { Configuration, OpenAIApi } from "openai";
-import { extractTextFromArticle } from "../../api/scraper";
 import { Summary } from "../../../components";
 import styles from "../../../styles/Home.module.css";
+import axios from 'axios'
 
 export const getServerSideProps = async (context) => {
   return {
@@ -27,13 +27,12 @@ const ArticleSummaryPage = ({ title, url, networkImage }) => {
   }, []);
 
   const getArticleText = async (url) => {
-    const articleText = await extractTextFromArticle(url);
-    return articleText;
+    const articleText = await axios.get('/api/extractArticle/', {params: {url}});
+    return articleText.data.concatArticleText;
   };
 
   const generateSummary = async (articleText) => {
     const configuration = new Configuration({
-      // organization: process.env.OPENAI_ORG,
       apiKey: process.env.NEXT_PUBLIC_OPEN_API_KEY,
     });
     const openai = new OpenAIApi(configuration);
