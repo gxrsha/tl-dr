@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import { getTopStories } from "../pages/api/scraper";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import Link from "next/link";
+import axios from "axios";
 
 const TopStories = ({ brand, url, networkImage }) => {
   const [topStories, setTopStories] = useState([]);
@@ -10,7 +10,8 @@ const TopStories = ({ brand, url, networkImage }) => {
 
   useEffect(() => {
     const retrieveSiteInfo = async () => {
-      const topStories = await getTopStories(url);
+      const data = await axios(`/api/scraper/`, {params: {url}})
+      const topStories = data.data.topStories;
       setTopStories(topStories);
       setIsLoading(false);
     };

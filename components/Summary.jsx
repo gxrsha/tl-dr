@@ -3,7 +3,6 @@ import { LoadingSpinner } from "../components";
 
 const Summary = ({ title, url, networkImage, summaryText }) => {
   const navigateToUrl = (url) => {
-    console.log("this is our url: ", url);
     window.open(url, "_blank", "noopener,noreferrer");
   };
 
