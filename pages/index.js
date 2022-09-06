@@ -14,6 +14,7 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>TL;DR</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="description"
           content="TL;DR - Summarize your favorite vox media articles"
