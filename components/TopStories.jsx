@@ -40,7 +40,7 @@ const TopStories = ({ brand, url, networkImage }) => {
           >
             <div
               key={`article-${index}`}
-              className="items-center h-auto my-3 md:my-5 w-[326px] flex md:w-[40rem] border-slate-100 rounded-md border-[6px] shadow-md cursor-pointer hover:shadow-xl hover:border-slate-300"
+              className="items-center h-auto my-3 md:my-5 w-[326px] flex md:w-[40rem] border-slate-100 rounded-md border-[6px] shadow-md cursor-pointer hover:shadow-xl hover:border-slate-300 overflow-x-hidden"
             >
               <div className="hidden w-1/8 md:block flex justify-center items-center m-2">
                 <img
